@@ -14,7 +14,7 @@ This version includes major new work undertaken by the Prosody community to expa
     - Converting certificates to and from the standard ASCII PEM format
     - Generating the fingerprint/digest of a certificate (using SHA1, SHA256 or SHA512)
     - Reading the certificate's expiration, serial number, and other info
-
+  
   * The ability to get more detailed information from OpenSSL about why a certificate failed verification, for each certificate in the chain
   
   * Flags to force acceptance of invalid certificates, e.g. to allow the use of self-signed certificates in a Trust On First Use model
