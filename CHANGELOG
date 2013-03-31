@@ -1,8 +1,19 @@
 --------------------------------------------------------------------------------
+LuaSec-Prosody 0.5
+------------
+
+ - Add an X509 API
+ - Add flags to customise OpenSSL's certificate validation
+ - Support for ECDH cipher suites
+ - Add an API to get TLS 'finished' messages
+ 
+ For more info on this release, please see the README.md file.
+
+--------------------------------------------------------------------------------
 LuaSec 0.4.1
 ------------
-- SSL options updated --- based on OpenSSL 1.0.0d.
-- Activate SSL_MODE_RELEASE_BUFFERS by default if it is available.
+ - SSL options updated based on OpenSSL 1.0.0d.
+ - Activate SSL_MODE_RELEASE_BUFFERS by default if it is available.
   (thanks Prosody project)
 
 ---------------------------------------------------------------------------------
