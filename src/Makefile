@@ -30,9 +30,10 @@ LDFLAGS=$(MYLDFLAGS)
 all:
 
 install: $(CMOD) $(LMOD)
-	install -m644 -D $(CMOD) $(LUACPATH)
-	install -m644 -D $(LMOD) $(LUAPATH)
-	install -m644 -D https.lua $(LUAPATH)/ssl
+	install -d $(LUAPATH)/ssl $(LUACPATH)
+	install -m644 $(CMOD) $(LUACPATH)
+	install -m644 $(LMOD) $(LUAPATH)
+	install -m644 https.lua $(LUAPATH)/ssl
 
 linux:
 	@$(MAKE) $(CMOD) MYCFLAGS="$(LNX_CFLAGS)" MYLDFLAGS="$(LNX_LDFLAGS)" EXTRA="$(EXTRA)"
